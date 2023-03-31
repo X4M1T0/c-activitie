@@ -21,6 +21,5 @@ bt=(b1+b2)/2;
 printf("Media do aluno nos dois bimestres : %.2f\n\n",bt);
 
 
-return 0;
-
+system("PAUSE");
 }
