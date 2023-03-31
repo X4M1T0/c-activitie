@@ -58,6 +58,7 @@ void participantes(){
 }
 
 void atividades(){
+
     system("cls");
     printf("*******************************************************************\n"
            "**          NOSSO SETUP SO FUNCIONA COM ARQUIVOS .EXE            **\n"
@@ -77,6 +78,11 @@ void atividades(){
     }
 
     system(openArq);
+
+    strcpy(openArq, "start ");
+    arquivo[0] = "\0";
+    strcpy(type, ".exe");
+
     atividades();
 
 }
