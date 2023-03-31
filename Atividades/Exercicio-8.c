@@ -9,7 +9,7 @@ char obs [6] [40] = {"Abaixo do peso", "Peso normal", "Sobrepeso", "Obeso leve",
 
 
 int main(){
-
+    printf("Calculadora de IMC. \n");
     printf("Digite seu peso (em KG): ");
     scanf("%f", &peso);
 

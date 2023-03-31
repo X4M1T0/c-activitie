@@ -6,6 +6,7 @@ int x, y, z;
 char meses [13] [15] = {"", "Janeiro", "Fevereiro", "Marco", "Abril", "Maio", "Junho", "Julho", "Agosto", "Setembro", "Outubro", "Novembro", "Dezembro"};
 
 int main(){
+    printf("Conversor de datas por extenso. \n");
     printf("Digite um dia do ano (somente numeros): ");
     scanf("%d", &x);
 

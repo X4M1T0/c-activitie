@@ -6,6 +6,7 @@ float x,result;
 
 int main(){
 
+    printf("Calculadora de desconto salarial. \n");
     printf("Insira seu salario mensal: ");
     scanf("%f", &x);
 
@@ -13,12 +14,7 @@ int main(){
 
     if(result > 334.29){
         system("cls");
-        printf("Erro: Você e um escravo assalariado! \n\n"
-               "----          ---- \n"
-               "|  |          |  | \n"
-               "|  |          |  | \n"
-               "----          ---- \n\n"
-               "__________________\n\n");
+        printf("Erro: Seu desconto e maior do que o permitido! \n\n");
 
     } else {
         system("cls");

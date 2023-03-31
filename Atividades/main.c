@@ -45,11 +45,11 @@ void main(){
 
 void participantes(){
         system("cls");
-        printf("Participantes do trabalho: \n\n"
-               "  - Joao Igor Moura Martins \n "
-               " - Jose Octavio Lachi Pinhero \n "
-               " - Gabriel dos Santos Sousa \n\n "
-               "A divisao dos trabalhos foi a seguinte:\n\n"
+        printf("A divisao dos trabalhos foi a seguinte:\n\n"
+               "Participantes do trabalho: \n\n"
+               "  - Joao Igor Moura Martins - Exe. 1 ao 3; \n "
+               " - Jose Octavio Lachi Pinhero - Exe. 4 e 5; \n "
+               " - Gabriel dos Santos Sousa Exe. 6 ao 8 \n\n "
                "Cada um dos integrantes concordou em realizar uma quantidade de atividades dentre as entregues pelo professor. Apos a resolucao, foi-se explicado por cada um dos integrantes do grupo como se foi realizado cada linha do script criado para a resolucao do problema proposto. Apos isso, ainda se foi realizado cada um dos exercicios da tabela por cada um dos integrantes de maneira singular, na total intensao de testar seus conhecimentos de logica e codificacao! \n\n"
                "Deseja voltar ao inicio? (S/N): ");
         scanf("%s", &ret);
