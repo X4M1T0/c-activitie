@@ -41,4 +41,6 @@ resto= cofre-valor;
     }
     if (valor==cofre)
         printf ("O valor e igual ao presente no cofre");
+    
+    system("PAUSE");
 }
