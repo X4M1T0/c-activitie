@@ -21,5 +21,7 @@ int main(){
         printf("Seu desconto salarial referente a esse mes foi de: R$%.2f\n\n", result);
 
     }
+    
+    system("PAUSE");
 
 }
