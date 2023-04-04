@@ -43,5 +43,6 @@ else {
     printf("Numero do mes invalido!...");
 }
 
-return 0;
+
+system("PAUSE");
  }

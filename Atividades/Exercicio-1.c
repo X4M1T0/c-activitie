@@ -15,6 +15,6 @@ printf("Diametro: %.2f\n",d);
 printf("Area: %.2f\n",a);
 
 
-return 0;
+system("PAUSE");
 
 }
