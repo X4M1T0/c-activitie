@@ -17,6 +17,8 @@ int main(){
         pw1=n1*n1;
         printf ("esse numero e impar e quando elevado ao quadrado ele se torna:%.2f", pw1);
     }
+    
+    system("PAUSE");
 
 
 }

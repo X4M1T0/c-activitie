@@ -27,7 +27,8 @@ void main(){
     "Selecione o que deseja executar: \n\n"
     "1 - Participantes e organizacao \n"
     "2 - Atividades \n"
-    "3 - Sair \n\n");
+    "3 - Sair \n\n"
+    "LEMBRE-SE - PARA SELECIONAR A ATIVIDADE ESCREVA O NOME COMPLETO DELA. EX: 'exercicio-1'\n\n");
 
     scanf("%d", &selection);
 
@@ -64,10 +65,12 @@ void atividades(){
            "**          NOSSO SETUP SO FUNCIONA COM ARQUIVOS .EXE            **\n"
            "**  CERTIFIQUE-SE DE QUE TODOS OS EXERCICIOS ESTEJAM COMPILADOS! **\n"
            "*******************************************************************\n\n"
+           "LEMBRE-SE - PARA SELECIONAR A ATIVIDADE ESCREVA O NOME COMPLETO DELA. EX: 'exercicio-1'\n\n"
            "Selecione a atividade que deseja executar:\n\n");
 
     system("dir *.exe");
-    printf("\n\n - Caso deseje voltar ao inicio, digite 'return' - \n");
+    printf("\n\n - Caso deseje voltar ao inicio, digite 'return' - \n"
+          "LEMBRE-SE - PARA SELECIONAR A ATIVIDADE ESCREVA O NOME COMPLETO DELA! EX: 'exercicio-1'\n\n");
     scanf("%s", &arquivo);
 
     if(strcmp(arquivo,"return") == 0){

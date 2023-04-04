@@ -43,4 +43,6 @@ int main(){
     } else if(imc > e){
             printf("Voce e: %s", obs[5]);
     }
+    
+    system("PAUSE");
 }
