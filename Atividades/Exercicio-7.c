@@ -28,6 +28,8 @@ int main(){
     system("cls");
 
     printf("Sua data por extenso e:  %d de %s de %d", x, meses[y], z);
+    
+    system("PAUSE");
 
 }
 
