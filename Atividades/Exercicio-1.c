@@ -3,7 +3,7 @@
 
 int main(){
     float r,c,d,a;
-printf("Calculadora de comprimento, diametro e areas de uma circunferencia pelo raio.\n");
+printf("Calculadora de comprimento, diametro e area de uma circunferencia pelo raio.\n");
 printf("Digite o raio: ");
 scanf("%f",&r);
 c=2*3.14*r;
@@ -14,10 +14,6 @@ printf("Comprimento: %.2f\n",c);
 printf("Diametro: %.2f\n",d);
 printf("Area: %.2f\n",a);
 
-<<<<<<< HEAD
-
-=======
->>>>>>> d7e13419b6e143996321fd7f4c090fed429b2f31
 system("PAUSE");
 
 }

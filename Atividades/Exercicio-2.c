@@ -44,9 +44,5 @@ else {
     printf("Numero do mes invalido!...\n");
 }
 
-<<<<<<< HEAD
-
-=======
->>>>>>> d7e13419b6e143996321fd7f4c090fed429b2f31
 system("PAUSE");
  }

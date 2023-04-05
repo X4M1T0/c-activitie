@@ -1,12 +1,15 @@
 #include <stdlib.h>
 #include <stdio.h>
 #include <string.h>
+#include <stdbool.h>
 
 int  sel, local, selection;
 
 char ret;
 
 char openArq [10] = {"start "}, arquivo [20], type [4] = {".exe"};
+
+bool booleana;
 
 
 void main(){
@@ -35,12 +38,15 @@ void main(){
     if(selection == 1){
         participantes();
     } else if (selection == 2){
-        atividades();
+        booleana = true;
+        atividades(booleana);
     } else if (selection == 3){
-        system("exit");
+        booleana = false;
+        atividades(booleana);
     } else {
         error();
     }
+
 
 }
 
@@ -58,39 +64,41 @@ void participantes(){
 
 }
 
-void atividades(){
+void atividades(booleana){
+    if(booleana == true){
 
-    system("cls");
-    printf("*******************************************************************\n"
-           "**          NOSSO SETUP SO FUNCIONA COM ARQUIVOS .EXE            **\n"
-           "**  CERTIFIQUE-SE DE QUE TODOS OS EXERCICIOS ESTEJAM COMPILADOS! **\n"
-           "*******************************************************************\n\n"
-           "LEMBRE-SE - PARA SELECIONAR A ATIVIDADE ESCREVA O NOME COMPLETO DELA. EX: 'exercicio-1'\n\n"
-           "Selecione a atividade que deseja executar:\n\n");
 
-    system("dir *.exe");
-    printf("\n\n - Caso deseje voltar ao inicio, digite 'return' - \n"
-          "LEMBRE-SE - PARA SELECIONAR A ATIVIDADE ESCREVA O NOME COMPLETO DELA! EX: 'exercicio-1'\n\n");
-    scanf("%s", &arquivo);
+        system("cls");
+        printf("*******************************************************************\n"
+               "**          NOSSO SETUP SO FUNCIONA COM ARQUIVOS .EXE            **\n"
+               "**  CERTIFIQUE-SE DE QUE TODOS OS EXERCICIOS ESTEJAM COMPILADOS! **\n"
+               "*******************************************************************\n\n"
+               "LEMBRE-SE - PARA SELECIONAR A ATIVIDADE ESCREVA O NOME COMPLETO DELA. EX: 'exercicio-1'\n\n"
+               "Selecione a atividade que deseja executar:\n\n");
 
-    if(strcmp(arquivo,"return") == 0){
-        main();
-    } else {
-        strcat(arquivo, type);
-        strcat(openArq, arquivo);
+        system("dir *.exe");
+        printf("\n\n - Caso deseje voltar ao inicio, digite 'return' - \n\n"
+              "LEMBRE-SE - PARA SELECIONAR A ATIVIDADE ESCREVA O NOME COMPLETO DELA! EX: 'exercicio-1'\n\n");
+        scanf("%s", &arquivo);
+
+        if(strcmp(arquivo,"return") == 0){
+            main();
+        } else {
+            strcat(arquivo, type);
+            strcat(openArq, arquivo);
+        }
+
+        system(openArq);
+
+        strcpy(openArq, "start ");
+        arquivo[0] = "\0";
+        strcpy(type, ".exe");
+
+        atividades();
+    } else if (booleana == false){
+        system("PAUSE");
     }
-
-    system(openArq);
-
-    strcpy(openArq, "start ");
-    arquivo[0] = "\0";
-    strcpy(type, ".exe");
-
-    atividades();
-
 }
-
-
 
 
 void error(){
